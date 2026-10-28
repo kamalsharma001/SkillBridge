@@ -1,0 +1,694 @@
+[
+  {
+    "course_id": "COURSE-00001",
+    "title": "Programming for Everybody (Getting Started with Python)",
+    "provider": "University of Michigan / Coursera",
+    "level": "beginner",
+    "duration_hours": 20.0,
+    "skills": [
+      "Python",
+      "Programming Fundamentals"
+    ],
+    "certification": true,
+    "rating": 4.8,
+    "url": "https://www.coursera.org/learn/python"
+  },
+  {
+    "course_id": "COURSE-00002",
+    "title": "Python Basics",
+    "provider": "University of Michigan / Coursera",
+    "level": "beginner",
+    "duration_hours": 30.0,
+    "skills": [
+      "Python",
+      "Programming Fundamentals"
+    ],
+    "certification": true,
+    "rating": 4.8,
+    "url": "https://www.coursera.org/learn/python-basics"
+  },
+  {
+    "course_id": "COURSE-00003",
+    "title": "Introduction to Python Programming",
+    "provider": "University of Pennsylvania / Coursera",
+    "level": "beginner",
+    "duration_hours": 30.0,
+    "skills": [
+      "Python",
+      "Programming Fundamentals"
+    ],
+    "certification": true,
+    "rating": 4.6,
+    "url": "https://www.coursera.org/learn/python-programming-intro"
+  },
+  {
+    "course_id": "COURSE-00004",
+    "title": "Python Programming Fundamentals",
+    "provider": "Duke University / Coursera",
+    "level": "beginner",
+    "duration_hours": 30.0,
+    "skills": [
+      "Python",
+      "Programming Fundamentals"
+    ],
+    "certification": true,
+    "rating": 4.0,
+    "url": "https://www.coursera.org/learn/python-programming-fundamentals"
+  },
+  {
+    "course_id": "COURSE-00005",
+    "title": "Crash Course on Python",
+    "provider": "Google / Coursera",
+    "level": "beginner",
+    "duration_hours": 30.0,
+    "skills": [
+      "Python",
+      "Programming Fundamentals"
+    ],
+    "certification": true,
+    "rating": 4.8,
+    "url": "https://www.coursera.org/learn/python-crash-course"
+  },
+  {
+    "course_id": "COURSE-00006",
+    "title": "The Structured Query Language (SQL)",
+    "provider": "University of Colorado Boulder / Coursera",
+    "level": "beginner",
+    "duration_hours": 30.0,
+    "skills": [
+      "SQL",
+      "Relational Databases"
+    ],
+    "certification": true,
+    "rating": 4.7,
+    "url": "https://www.coursera.org/learn/the-structured-query-language-sql"
+  },
+  {
+    "course_id": "COURSE-00007",
+    "title": "Databases and SQL for Data Science with Python",
+    "provider": "IBM / Coursera",
+    "level": "beginner",
+    "duration_hours": 20.0,
+    "skills": [
+      "SQL",
+      "Python",
+      "Relational Databases",
+      "Data Analysis"
+    ],
+    "certification": true,
+    "rating": 4.7,
+    "url": "https://www.coursera.org/learn/sql-data-science"
+  },
+  {
+    "course_id": "COURSE-00008",
+    "title": "SQL Foundations",
+    "provider": "Microsoft / Coursera",
+    "level": "beginner",
+    "duration_hours": 20.0,
+    "skills": [
+      "SQL",
+      "Databases"
+    ],
+    "certification": true,
+    "rating": 4.6,
+    "url": "https://www.coursera.org/learn/sql-foundations"
+  },
+  {
+    "course_id": "COURSE-00009",
+    "title": "SQL for Data Science",
+    "provider": "University of California, Davis / Coursera",
+    "level": "beginner",
+    "duration_hours": 20.0,
+    "skills": [
+      "SQL",
+      "Data Analysis",
+      "Relational Databases"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://www.coursera.org/learn/sql-for-data-science"
+  },
+  {
+    "course_id": "COURSE-00010",
+    "title": "SQL: A Practical Introduction for Querying Databases",
+    "provider": "IBM / Coursera",
+    "level": "beginner",
+    "duration_hours": 20.0,
+    "skills": [
+      "SQL",
+      "Relational Databases",
+      "Data Analysis"
+    ],
+    "certification": true,
+    "rating": 4.7,
+    "url": "https://www.coursera.org/learn/sql-practical-introduction-for-querying-databases/"
+  },
+  {
+    "course_id": "COURSE-00011",
+    "title": "Foundations of Cybersecurity",
+    "provider": "Google / Coursera",
+    "level": "beginner",
+    "duration_hours": 10.0,
+    "skills": [
+      "Cybersecurity",
+      "Security Fundamentals",
+      "Risk Management"
+    ],
+    "certification": true,
+    "rating": 4.8,
+    "url": "https://www.coursera.org/learn/foundations-of-cybersecurity"
+  },
+  {
+    "course_id": "COURSE-00012",
+    "title": "What Is Cybersecurity?",
+    "provider": "IBM / Coursera",
+    "level": "beginner",
+    "duration_hours": 5.0,
+    "skills": [
+      "Cybersecurity",
+      "Security Fundamentals"
+    ],
+    "certification": true,
+    "rating": 4.9,
+    "url": "https://www.coursera.org/learn/what-is-cybersecurity"
+  },
+  {
+    "course_id": "COURSE-00013",
+    "title": "Introduction to Cybersecurity Essentials",
+    "provider": "IBM / Coursera",
+    "level": "beginner",
+    "duration_hours": 10.0,
+    "skills": [
+      "Cybersecurity",
+      "Authentication",
+      "Encryption",
+      "Endpoint Security"
+    ],
+    "certification": true,
+    "rating": 4.9,
+    "url": "https://www.coursera.org/learn/introduction-to-cybersecurity-essentials"
+  },
+  {
+    "course_id": "COURSE-00014",
+    "title": "Machine Learning Introduction for Everyone",
+    "provider": "IBM / Coursera",
+    "level": "beginner",
+    "duration_hours": 6.0,
+    "skills": [
+      "Machine Learning",
+      "Artificial Intelligence"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://www.coursera.org/learn/machine-learning-introduction-for-everyone"
+  },
+  {
+    "course_id": "COURSE-00015",
+    "title": "Machine Learning: an overview",
+    "provider": "Politecnico di Milano / Coursera",
+    "level": "beginner",
+    "duration_hours": 3.0,
+    "skills": [
+      "Machine Learning",
+      "Supervised Learning"
+    ],
+    "certification": true,
+    "rating": 4.7,
+    "url": "https://www.coursera.org/learn/machine-learning-overview"
+  },
+  {
+    "course_id": "COURSE-00016",
+    "title": "Data Analysis with Spreadsheets and SQL",
+    "provider": "Meta / Coursera",
+    "level": "beginner",
+    "duration_hours": 30.0,
+    "skills": [
+      "Excel",
+      "SQL",
+      "Data Analysis",
+      "Spreadsheets"
+    ],
+    "certification": true,
+    "rating": 4.6,
+    "url": "https://www.coursera.org/learn/data-analysis-with-spreadsheets-and-sql"
+  },
+  {
+    "course_id": "COURSE-00017",
+    "title": "Analyze Data to Answer Questions",
+    "provider": "Google / Coursera",
+    "level": "beginner",
+    "duration_hours": 30.0,
+    "skills": [
+      "Data Analysis",
+      "SQL",
+      "Spreadsheets"
+    ],
+    "certification": true,
+    "rating": 4.6,
+    "url": "https://www.coursera.org/learn/analyze-data"
+  },
+  {
+    "course_id": "COURSE-00018",
+    "title": "Python for Data Science",
+    "provider": "Great Learning",
+    "level": "beginner",
+    "duration_hours": 2.25,
+    "skills": [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Data Science",
+      "Data Visualization"
+    ],
+    "certification": true,
+    "rating": 4.57,
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/python-for-data-science-1"
+  },
+  {
+    "course_id": "COURSE-00019",
+    "title": "Data Science with Python",
+    "provider": "Great Learning",
+    "level": "beginner",
+    "duration_hours": 17.25,
+    "skills": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Statistics",
+      "Data Science",
+      "Data Visualization",
+      "Machine Learning"
+    ],
+    "certification": true,
+    "rating": 4.61,
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/data-science-with-python"
+  },
+  {
+    "course_id": "COURSE-00020",
+    "title": "Introduction to Machine Learning",
+    "provider": "Great Learning",
+    "level": "beginner",
+    "duration_hours": 1.5,
+    "skills": [
+      "Machine Learning",
+      "Supervised Learning",
+      "Unsupervised Learning"
+    ],
+    "certification": true,
+    "rating": 4.46,
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/introduction-to-machine-learning1"
+  },
+  {
+    "course_id": "COURSE-00021",
+    "title": "Data Preparation for Machine Learning",
+    "provider": "Great Learning",
+    "level": "beginner",
+    "duration_hours": 1.5,
+    "skills": [
+      "Data Cleaning",
+      "Data Preparation",
+      "Machine Learning",
+      "Cross Validation"
+    ],
+    "certification": true,
+    "rating": 4.49,
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/preparing-data-for-machine-learning"
+  },
+  {
+    "course_id": "COURSE-00022",
+    "title": "Machine Learning Algorithms",
+    "provider": "Great Learning",
+    "level": "beginner",
+    "duration_hours": 2.25,
+    "skills": [
+      "Machine Learning",
+      "Linear Regression",
+      "Naive Bayes",
+      "KNN",
+      "SVM",
+      "Random Forest"
+    ],
+    "certification": true,
+    "rating": 4.49,
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/machine-learning-algorithms"
+  },
+  {
+    "course_id": "COURSE-00023",
+    "title": "Introduction to Deep Learning",
+    "provider": "Great Learning",
+    "level": "beginner",
+    "duration_hours": 2.25,
+    "skills": [
+      "Deep Learning",
+      "Neural Networks",
+      "CNN",
+      "RNN",
+      "LSTM"
+    ],
+    "certification": true,
+    "rating": 4.46,
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/introduction-to-deep-learning"
+  },
+  {
+    "course_id": "COURSE-00024",
+    "title": "Introduction to Natural Language Processing",
+    "provider": "Great Learning",
+    "level": "beginner",
+    "duration_hours": 6.75,
+    "skills": [
+      "NLP",
+      "Natural Language Processing",
+      "Sentiment Analysis",
+      "Language Models"
+    ],
+    "certification": true,
+    "rating": 4.53,
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/introduction-to-natural-language-processing"
+  },
+  {
+    "course_id": "COURSE-00025",
+    "title": "Data Visualization With Power BI",
+    "provider": "Great Learning",
+    "level": "beginner",
+    "duration_hours": 3.0,
+    "skills": [
+      "Power BI",
+      "Data Visualization",
+      "DAX",
+      "Dashboards"
+    ],
+    "certification": true,
+    "rating": 4.52,
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/data-visualization-with-power-bi"
+  },
+  {
+    "course_id": "COURSE-00026",
+    "title": "Tableau for Beginners",
+    "provider": "Great Learning",
+    "level": "beginner",
+    "duration_hours": 8.25,
+    "skills": [
+      "Tableau",
+      "Data Visualization",
+      "Dashboards"
+    ],
+    "certification": true,
+    "rating": 4.62,
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/tableau-for-beginners"
+  },
+  {
+    "course_id": "COURSE-00027",
+    "title": "Career in Cybersecurity",
+    "provider": "Great Learning",
+    "level": "beginner",
+    "duration_hours": 1.5,
+    "skills": [
+      "Cybersecurity",
+      "Security Tools",
+      "Security Careers"
+    ],
+    "certification": true,
+    "rating": 4.4,
+    "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/career-in-cybersecurity"
+  },
+  {
+    "course_id": "COURSE-00028",
+    "title": "Introduction to AI in Azure",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 8.0,
+    "skills": [
+      "Artificial Intelligence",
+      "Azure AI",
+      "Cloud Computing"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/courses/ai-901t00"
+  },
+  {
+    "course_id": "COURSE-00029",
+    "title": "Develop AI agents on Azure",
+    "provider": "Microsoft Learn",
+    "level": "intermediate",
+    "duration_hours": 8.0,
+    "skills": [
+      "AI Agents",
+      "Azure AI",
+      "Generative AI",
+      "Cloud Computing"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/courses/ai-3026"
+  },
+  {
+    "course_id": "COURSE-00030",
+    "title": "Get started with AI applications and agents on Azure",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 5.62,
+    "skills": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "AI Agents",
+      "Computer Vision",
+      "Speech",
+      "NLP"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/"
+  },
+  {
+    "course_id": "COURSE-00031",
+    "title": "Create machine learning models",
+    "provider": "Microsoft Learn",
+    "level": "intermediate",
+    "duration_hours": 6.32,
+    "skills": [
+      "Machine Learning",
+      "Azure Machine Learning"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/topics/azure-data-and-ai"
+  },
+  {
+    "course_id": "COURSE-00032",
+    "title": "Prepare data for analysis with Power BI",
+    "provider": "Microsoft Learn",
+    "level": "intermediate",
+    "duration_hours": 4.55,
+    "skills": [
+      "Power BI",
+      "Data Preparation",
+      "Data Transformation"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/paths/?products=power-platform"
+  },
+  {
+    "course_id": "COURSE-00033",
+    "title": "Explore Generative AI",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 0.62,
+    "skills": [
+      "Generative AI",
+      "Artificial Intelligence"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/"
+  },
+  {
+    "course_id": "COURSE-00034",
+    "title": "Introduction to Git",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 1.43,
+    "skills": [
+      "Git",
+      "Version Control"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-git/"
+  },
+  {
+    "course_id": "COURSE-00035",
+    "title": "Fundamentals of computer networking",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 0.78,
+    "skills": [
+      "Networking",
+      "TCP/IP",
+      "DNS",
+      "Network Devices"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/modules/network-fundamentals/"
+  },
+  {
+    "course_id": "COURSE-00036",
+    "title": "Build your first HTML webpage",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 0.52,
+    "skills": [
+      "HTML",
+      "Web Development",
+      "Visual Studio Code"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/modules/build-first-html-webpage/"
+  },
+  {
+    "course_id": "COURSE-00037",
+    "title": "Use CSS Styles in a Webpage",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 0.58,
+    "skills": [
+      "CSS",
+      "Web Development",
+      "HTML"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/modules/use-css-styles/"
+  },
+  {
+    "course_id": "COURSE-00038",
+    "title": "Build web pages with HTML and CSS for beginners",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 1.35,
+    "skills": [
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/paths/build-web-pages-html-css-for-beginners/"
+  },
+  {
+    "course_id": "COURSE-00039",
+    "title": "Get started with web development using Visual Studio Code",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 0.73,
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Web Development",
+      "Visual Studio Code"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/modules/get-started-with-web-development/"
+  },
+  {
+    "course_id": "COURSE-00040",
+    "title": "Introduction to Docker containers",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 1.0,
+    "skills": [
+      "Docker",
+      "Containers",
+      "Containerization"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-docker-containers/"
+  },
+  {
+    "course_id": "COURSE-00041",
+    "title": "Introduction to Azure virtual machines",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 1.12,
+    "skills": [
+      "Azure",
+      "Virtual Machines",
+      "Cloud Computing"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-azure-virtual-machines/"
+  },
+  {
+    "course_id": "COURSE-00042",
+    "title": "Introduction to Azure Copilot",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 0.45,
+    "skills": [
+      "Azure",
+      "AI",
+      "Azure Copilot",
+      "Generative AI"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/modules/intro-to-azure-copilot/"
+  },
+  {
+    "course_id": "COURSE-00043",
+    "title": "AWS Cloud Practitioner Essentials",
+    "provider": "AWS Training",
+    "level": "beginner",
+    "duration_hours": 12.75,
+    "skills": [
+      "AWS",
+      "Cloud Computing",
+      "Cloud Security",
+      "AWS Core Services",
+      "Cloud Architecture"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://aws.amazon.com/training/learn-about/cloud-practitioner/"
+  },
+  {
+    "course_id": "COURSE-00044",
+    "title": "Get data in Power BI",
+    "provider": "Microsoft Learn",
+    "level": "intermediate",
+    "duration_hours": 1.77,
+    "skills": [
+      "Power BI",
+      "Data Import",
+      "SQL",
+      "Relational Databases",
+      "NoSQL"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/modules/get-data/"
+  },
+  {
+    "course_id": "COURSE-00045",
+    "title": "Build your first data model and explore the data by using Power BI",
+    "provider": "Microsoft Learn",
+    "level": "beginner",
+    "duration_hours": 1.53,
+    "skills": [
+      "Power BI",
+      "Data Modeling",
+      "Data Visualization",
+      "Relationships"
+    ],
+    "certification": true,
+    "rating": 4.5,
+    "url": "https://learn.microsoft.com/en-us/training/modules/build-your-first-data-model/"
+  }
+]
