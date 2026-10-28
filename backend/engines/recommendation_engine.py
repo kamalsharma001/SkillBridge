@@ -17,7 +17,7 @@ class RecommendationEngine:
         top_k: int = 10,
     ) -> List[Dict[str, Any]]:
         """Matches available courses to prioritized skill gaps."""
-        # Map gaps by normalized skill name so HANA, O*NET/ESCO and resume
+        # Map gaps by normalized skill name so course taxonomies and resume
         # variants still resolve to the same learning need.
         gap_skills = {
             self.skill_engine.normalize_skill_name(g.get("skill", "")): g

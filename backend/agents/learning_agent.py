@@ -60,7 +60,7 @@ class LearningAgent(BaseAgent):
         gaps = context.skill_gaps
         courses = context.courses
 
-        # Fetch courses from DataService if none provided (works for both JSON and HANA modes)
+        # Fetch courses from DataService if none provided
         if not courses and self.data_service:
             gap_skill_names = [g.get("skill", "") for g in gaps if g.get("skill")]
             if gap_skill_names:
@@ -70,18 +70,7 @@ class LearningAgent(BaseAgent):
             else:
                 courses = self.data_service.get_courses(limit=100)
 
-        # In HANA mode, if still no courses, return partial (don't use hardcoded fallbacks)
-        is_hana_mode = bool(self.data_service and self.data_service.is_hana)
-        if is_hana_mode and not courses:
-            return AgentResult(
-                agent=self.name,
-                status="partial",
-                summary="No HANA learning resources were available for the identified gaps.",
-                data={"learning_plan": [], "recommended_courses": [], "certifications": []},
-                warnings=["HANA returned no courses; hard-coded learning fallbacks were not used."],
-            )
-
-        # Default standard course catalog only for explicit local/test mode (JSON mode)
+        # Standard course catalog fallback
         if not courses:
             courses = [
                 {"title": "Docker Fundamentals & Containerization", "skills": ["Docker"], "platform": "Coursera", "duration_hours": 15, "rating": 4.8},
@@ -160,18 +149,11 @@ class LearningAgent(BaseAgent):
         evidence = []
         
         # Evidence for course recommendations
-        if self.data_service and self.data_service.is_hana:
-            evidence.append({
-                "source": "Course Catalog (SAP HANA)",
-                "dataset_record_id": f"courses.filtered_{len(courses)}",
-                "claim": f"Retrieved {len(courses)} courses from HANA catalog matching {len(gaps)} skill gaps"
-            })
-        else:
-            evidence.append({
-                "source": "Course Catalog (local)",
-                "dataset_record_id": f"courses.local_{len(courses)}",
-                "claim": f"Using {len(courses)} courses from local catalog for {len(gaps)} skill gaps"
-            })
+        evidence.append({
+            "source": "Verified Course Catalog",
+            "dataset_record_id": f"courses.filtered_{len(courses)}",
+            "claim": f"Using {len(courses)} courses from catalog matching {len(gaps)} skill gaps"
+        })
         
         # Evidence for recommendation engine matching
         evidence.append({

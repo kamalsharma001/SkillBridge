@@ -26,14 +26,12 @@ class SkillAnalysisAgent(BaseAgent):
         cand_dict = context.candidate
         target_dict = context.target_role
 
-        # In HANA mode: if candidate_id is provided but no full candidate data,
-        # fetch from SAP HANA via DataService
-        if self.data_service and self.data_service.is_hana:
-            if not cand_dict.get("skills") and cand_dict.get("candidate_id"):
-                hana_candidate = self.data_service.get_candidate(cand_dict["candidate_id"])
-                if hana_candidate:
-                    cand_dict = {**cand_dict, **hana_candidate}
-                    context.candidate = cand_dict
+        # If candidate_id is provided but no full candidate data, fetch from DataService
+        if self.data_service and not cand_dict.get("skills") and cand_dict.get("candidate_id"):
+            stored_candidate = self.data_service.get_candidate(cand_dict["candidate_id"])
+            if stored_candidate:
+                cand_dict = {**cand_dict, **stored_candidate}
+                context.candidate = cand_dict
 
         candidate = CandidateProfile.model_validate(cand_dict) if isinstance(cand_dict, dict) else cand_dict
         target_role = TargetRole.model_validate(target_dict) if isinstance(target_dict, dict) else target_dict
@@ -70,15 +68,9 @@ class SkillAnalysisAgent(BaseAgent):
         evidence = []
         
         # Evidence for target role requirements source
-        if self.data_service and self.data_service.is_hana:
+        if required_skills:
             evidence.append({
-                "source": "O*NET Database (SAP HANA)",
-                "dataset_record_id": f"ONET occupation skills for {target_role.name}",
-                "claim": f"Retrieved {len(required_skills)} required and {len(preferred_skills)} preferred skills from O*NET for {target_role.name}"
-            })
-        elif required_skills:
-            evidence.append({
-                "source": "O*NET / ESCO Framework (local)",
+                "source": "O*NET / ESCO Competency Framework",
                 "dataset_record_id": f"target_role.{target_role.name}",
                 "claim": f"Using {len(required_skills)} required and {len(preferred_skills)} preferred skills defined for {target_role.name}"
             })

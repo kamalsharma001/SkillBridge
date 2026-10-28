@@ -68,7 +68,6 @@ def sanitize_profile(cand: dict) -> dict:
 from orchestrator.agent_orchestrator import AgentOrchestrator
 from services.llm_service import LLMService
 from api.resume_parser import parse_resume_to_profile
-from database.connection import is_hana_available
 from config.settings import Settings
 
 app = FastAPI(title="SkillBridge AI Career Engine API")
@@ -182,13 +181,6 @@ async def analyze_career(request: AnalyzeRequest):
     """Runs the 6-agent AI pipeline for the provided candidate profile."""
     from database.data_service import DataService
     data_source = os.getenv("DATA_SOURCE", "json")
-    
-    if data_source == "hana" and not is_hana_available():
-        raise HTTPException(
-            status_code=503,
-            detail="SAP HANA Cloud credentials are required for career analysis when DATA_SOURCE is hana.",
-        )
-
     data_service = DataService(data_source=data_source)
     orchestrator = AgentOrchestrator(data_service=data_service)
     

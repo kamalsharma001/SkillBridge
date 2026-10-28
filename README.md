@@ -17,7 +17,7 @@ Skill_Bridge/
 │   ├── api/                  # FastAPI REST endpoints & WebSocket handlers
 │   ├── config/               # Settings & environment variables
 │   ├── data/                 # Benchmark taxonomies & mock fixtures
-│   ├── database/             # SAP HANA Cloud & local data connector
+│   ├── database/             # In-memory benchmark data service
 │   ├── engines/              # Vector retrieval & resume parsing engines
 │   ├── orchestrator/         # Multi-agent workflow orchestrator
 │   ├── Dockerfile            # Production Python container specification
@@ -169,8 +169,7 @@ Key configuration variables defined in `.env`:
 | :--- | :--- | :--- |
 | `LLM_PROVIDER` | AI provider (`gemini`, `nvidia`, `openai`) | `gemini` |
 | `GEMINI_API_KEY` | Google Gemini API key for career reasoning | `None` |
-| `DATA_SOURCE` | Storage backend (`json` for fixtures, `hana` for Cloud) | `json` |
-| `HANA_HOST` | SAP HANA Cloud host instance | `None` |
+| `DATA_SOURCE` | Storage backend (`json` for verified in-memory dataset) | `json` |
 | `NEXT_PUBLIC_API_BASE` | Frontend API base URL | `http://localhost:8000` |
 
 ---

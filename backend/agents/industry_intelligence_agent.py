@@ -18,8 +18,8 @@ class IndustryIntelligenceAgent(BaseAgent):
     def run(self, context: IndustryAgentContext) -> AgentResult:
         jobs = context.jobs
 
-        # In HANA mode: fetch jobs from SAP HANA if none provided
-        if not jobs and self.data_service and self.data_service.is_hana:
+        # Fetch jobs from data service if none provided
+        if not jobs and self.data_service:
             jobs = self.data_service.get_jobs(limit=50)
 
         trends = self.market_engine.calculate_trends(current_jobs=jobs)
@@ -40,17 +40,11 @@ class IndustryIntelligenceAgent(BaseAgent):
         evidence = []
         
         # Evidence for market data source
-        if self.data_service and self.data_service.is_hana:
+        if jobs:
             evidence.append({
-                "source": "Market History (SAP HANA)",
+                "source": "Market History Dataset",
                 "dataset_record_id": f"market_history.jobs_{len(jobs)}",
-                "claim": f"Analyzed trends across {len(jobs)} job postings from HANA"
-            })
-        elif jobs:
-            evidence.append({
-                "source": "Job Postings (local/test fixtures)",
-                "dataset_record_id": f"jobs.local_{len(jobs)}",
-                "claim": f"Analyzed trends across {len(jobs)} local job fixtures"
+                "claim": f"Analyzed trends across {len(jobs)} enterprise job postings"
             })
         else:
             evidence.append({

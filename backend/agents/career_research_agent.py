@@ -74,8 +74,8 @@ class CareerResearchAgent(BaseAgent):
         target_role = context.target_role.get("name", "Data Scientist")
         jobs = context.jobs
 
-        # In HANA mode: fetch jobs from SAP HANA if none provided
-        if not jobs and self.data_service and self.data_service.is_hana:
+        # Fetch jobs from data service if none provided
+        if not jobs and self.data_service:
             jobs = self.data_service.get_jobs(limit=50)
 
         # Analyze market demand deterministically
@@ -125,7 +125,7 @@ class CareerResearchAgent(BaseAgent):
         # Evidence for market demand if jobs available
         if jobs:
             evidence.append({
-                "source": "Job Market Analysis" + (" (SAP HANA)" if self.data_service and self.data_service.is_hana else " (local)"),
+                "source": "Job Market Analysis",
                 "dataset_record_id": f"jobs.analyzed_{len(jobs)}",
                 "claim": f"Analyzed demand for {len(market_stats)} skills across {len(jobs)} job postings"
             })

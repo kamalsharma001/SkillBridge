@@ -1,14 +1,12 @@
 """
-Database package for SAP HANA Cloud connectivity.
+Database package for verified benchmark datasets.
 
-Provides connection management, repository classes for ONET/ESCO/SKILLBRIDGE schemas,
-and a unified DataService abstraction that toggles between JSON test fixtures
-and SAP HANA Cloud production data.
+Provides in-memory DataService abstraction for career calibration,
+course syllabi, target roles, and opportunities.
 """
 
-from database.connection import get_hana_connection, test_connection
+from database.data_service import DataService
 
 __all__ = [
-    "get_hana_connection",
-    "test_connection",
+    "DataService",
 ]

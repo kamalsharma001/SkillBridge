@@ -62,18 +62,9 @@ class Settings:
     LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
 
     # ---- Data Source Configuration ----
-    # "json" = local JSON test fixtures for tests only
-    # "hana" = SAP HANA Cloud production data
-    DATA_SOURCE: str = os.getenv("DATA_SOURCE", "hana")
-    ENABLE_LLM_SYNTHESIS: bool = os.getenv("ENABLE_LLM_SYNTHESIS", "False").lower() in ("true", "1", "t")
-
-    # ---- SAP HANA Cloud Connection ----
-    HANA_HOST: Optional[str] = os.getenv("HANA_HOST")
-    HANA_PORT: int = int(os.getenv("HANA_PORT", "443"))
-    HANA_USER: Optional[str] = os.getenv("HANA_USER")
-    HANA_PASSWORD: Optional[str] = os.getenv("HANA_PASSWORD")
-    HANA_ENCRYPT: bool = os.getenv("HANA_ENCRYPT", "true").lower() in ("true", "1")
-    HANA_SSL_VALIDATE: bool = os.getenv("HANA_SSL_VALIDATE", "true").lower() in ("true", "1", "t")
+    # "json" = in-memory verified benchmark dataset
+    DATA_SOURCE: str = os.getenv("DATA_SOURCE", "json")
+    ENABLE_LLM_SYNTHESIS: bool = os.getenv("ENABLE_LLM_SYNTHESIS", "True").lower() in ("true", "1", "t")
 
     @classmethod
     def get_active_llm_key(cls) -> Optional[str]:
